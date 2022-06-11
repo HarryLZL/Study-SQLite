@@ -22,6 +22,9 @@ Public Class Form1
             MessageBox.Show(ex.Message.ToString)
         End Try
     End Sub
+    ''' <summary>
+    ''' 检索数据库 TB_UserInfo 表
+    ''' </summary>
     Private Sub Button_Serarch_Click(sender As Object, e As EventArgs) Handles Button_Serarch.Click
         Dim sql As String = "SELECT * FROM TB_UserInfo"
         Dim dt As New DataTable
