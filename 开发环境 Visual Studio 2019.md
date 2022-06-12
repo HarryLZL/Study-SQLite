@@ -38,5 +38,5 @@ Using conn As New SQLiteConnection("data source=database.db")
 		例如输入：NanUI，就会打开搜索列表  
 		选择第一个点进去  
 		这里可以用两种方式安装：  
-			1. 复制PM>后面的指令代码，NuGet 控制台安装，
+			1. 复制PM>后面的指令代码，NuGet 控制台安装，  
 			2. 在版本列表右侧下载安装包，下载完成双击就可以安装了
