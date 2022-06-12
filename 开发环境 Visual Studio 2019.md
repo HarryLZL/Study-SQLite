@@ -10,7 +10,7 @@ Dim dbpath As String = __System.IO.Directory.GetCurrentDirectory & "DB\masterDB.
 或者
 'Dim dbPath As String = __Application.StartupPath.ToString & "DB\masterDB.db"__  
 
-Dim con As New SQLiteConnection(String.Format(__"data source={0}", dbpath__))   
+Dim con As New SQLiteConnection(__String.Format("data source={0}", dbpath__))   
 或者
 Using conn As New SQLiteConnection(__$"data source={dbPath}"__)  
 
