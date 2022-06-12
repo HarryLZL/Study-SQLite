@@ -6,16 +6,16 @@
 ## 代码
 ### 数据库连接
 #### 完整路径 绝对路径
-Dim dbpath As String = System.IO.Directory.GetCurrentDirectory & "DB\masterDB.db"  
+Dim dbpath As String = __System.IO.Directory.GetCurrentDirectory & "DB\masterDB.db"__  
 或者
-'Dim dbPath As String = Application.StartupPath.ToString & "DB\masterDB.db"  
+'Dim dbPath As String = __Application.StartupPath.ToString & "DB\masterDB.db"__  
 
-Dim con As New SQLiteConnection(String.Format("data source={0}", dbpath))   
+Dim con As New SQLiteConnection(String.Format(__"data source={0}", dbpath__))   
 或者
-Using conn As New SQLiteConnection($"data source={dbPath}")  
+Using conn As New SQLiteConnection(__$"data source={dbPath}"__)  
 
 #### 相对路径方式
-Using conn As New SQLiteConnection("data source=masterDB.db")  
+Using conn As New SQLiteConnection(__"data source=masterDB.db"__)  
    
    
 ## 备忘录
