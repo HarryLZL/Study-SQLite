@@ -7,7 +7,9 @@
 ### 数据库连接
 #### 完整路径 绝对路径
 Dim dbpath As String = System.IO.Directory.GetCurrentDirectory & "\database.db"
+
 Dim con As New SQLiteConnection(String.Format("data source{0}", dbpath)) 
+
 #### 相对路径方式
 Dim con As New SQLiteConnection("data source=database.db")  
    
